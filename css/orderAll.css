@@ -1,0 +1,212 @@
+*{
+	font-size: 12px;
+	font-family: simsun;
+}
+
+.content{
+	width:1200px;
+	margin:0 auto;
+}
+/*中间上部分内容*/
+.Ctitle{
+	margin:20px auto;
+}
+.Ctitle a:nth-child(1){
+	font-size: 16px;
+    font-weight: bold;
+}
+/*中间左部分内容*/
+.Cleft{
+	width: 118px;
+    padding-right: 20px;
+    color: #444444;
+    line-height: 26px;
+}
+.Cleft h3{
+	font-size: 12px;
+    font-weight: bold;
+    padding-left: 18px;
+    line-height: 30px;
+    cursor: pointer;
+    background: url('../img/arrow.jpg') no-repeat left center;
+}
+.Cleft ul{
+	padding-left: 20px;
+}
+/*中间右部分*/
+.Cright{
+	border: 1px solid #e3e3e3;
+    width: 1060px;
+    background: #f1f1f1;
+    margin-bottom: 50px;
+}
+.Cright .Ctop{
+	background: #fff;
+    border-bottom: 1px solid #e3e3e3;
+}
+.Cright .Ctop a{
+	display: inline-block;
+	font-size: 12px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 40px;
+    color: #444444;
+    border-right: 1px solid #f1f1f1;
+    background: #f4f4f4;
+}
+.Cright .Cbom .Cbom1{
+	padding: 15px 40px 100px;
+}
+.Cright .Cbom .Cbom2{
+	margin-top: 35px;
+    color: #666666;
+    width: 922px;
+    overflow: hidden;
+}
+.Cright .Cbom .Cbom2 .li{
+	height: 175px;
+    background: url("../img/kuohao.jpg") no-repeat 90px top;
+}
+/*--------left-------*/
+.Cright .Cbom .Cbom2 .li .liLeft{
+	width: 100px;
+    font-size: 14px;
+}
+
+.Cright .Cbom .Cbom2 .li .liLeft .totalPrice{
+	color: #f24444;
+	font-size:14px;
+	font-weight: bold;
+}
+/*---------right--------*/
+.Cright .Cbom .Cbom2 .li .liRight{
+	background: #fff;
+    height: 150px;
+    width: 800px;
+    border: 1px solid #e3e3e3;
+    margin-left: 20px;
+    overflow: hidden;
+}
+.Cright .Cbom .Cbom2 .li .liRight .liTop{
+	border-bottom: 1px solid #e3e3e3;
+}
+.Cright .Cbom .Cbom2 .li .liRight .liTop .orderId{
+	width: 420px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}
+.Cright .Cbom .Cbom2 .li .liRight .liTop .owner{
+	width: 100px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}
+.Cright .Cbom .Cbom2 .li .liRight .liTop .orderState{
+    width: 140px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}
+.Cright .Cbom .Cbom2 .li .liRight .liTop .control{
+    width: 140px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.Cright .Cbom .Cbom2 .li .liRight .liBom .orderIds{
+	width: 420px;
+}
+.Cright .Cbom .Cbom2 .li .liRight .liBom .orderIds ul{
+	margin: 30px 0 0 25px;
+	max-width: 300px;
+	max-height: 48px;
+	overflow:hidden;
+}
+.Cright .Cbom .Cbom2 .li .liRight .liBom .orderIds ul li{
+	float:left;
+	display:table;
+	width:48px;
+	height:48px;
+	text-align: center;
+	margin-left: 5px;
+}
+.Cright .Cbom .Cbom2 .li .liRight .liBom .orderIds ul li a{
+	display:table-cell;
+	vertical-align: middle;
+    border: 1px solid #e8e6e6;
+}
+.Cright .Cbom .Cbom2 .li .liRight .liBom .orderIds ul li a img{
+	max-width:48px;
+	max-height: 48px;
+}
+.Cright .Cbom .Cbom2 .li .liRight .liBom .orderIds .infos{
+	line-height: 20px;
+    margin: 30px 0 0 20px;
+}
+.Cright .Cbom .Cbom2 .li .liRight .liBom .orderIds .infos a{
+	color: #666666;
+}
+.Cright .Cbom .Cbom2 .li .liRight .liBom .orderIds .infos p{
+	color: #f24444;
+}
+
+.Cright .Cbom .Cbom2 .li .liRight .liBom .owners{
+	width:99px;
+	border-left:1px solid #e3e3e3;
+	height:109px;
+	line-height: 109px;
+	font-weight:normal;
+	text-align: center;
+}
+.Cright .Cbom .Cbom2 .li .liRight .liBom .orderStates{
+	line-height: 109px;
+	text-align: center;
+	width:140px;
+    height: 109px;
+    border-left: 1px solid #e3e3e3;
+}
+.Cright .Cbom .Cbom2 .li .liRight .liBom .control{
+	line-height: 30px;
+	width:138px;
+	height:109px;
+    border-left: 1px solid #e3e3e3;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+.Cright .Cbom .Cbom2 .li .liRight .liBom .control a:nth-child(1){
+	display:inline-block;
+	box-sizing: border-box;
+	padding: 0px 20px;
+	border:1px solid #e3e3e3;
+	background: #f1f1f1;
+	border-radius: 4px;
+}
+.Cright .Cbom .Cbom2 .li .liRight .liBom .control a:nth-child(2){
+	display:inline-block;
+	color: #0088cc;
+}
+/*分页*/
+.pager{
+	padding:0 58px;
+}
+.pager .pagerInner span b{
+	color: #f24444;
+}
+.pager .pagerInner a{
+	display:inline-block;
+	width: 60px;
+    line-height: 22px;
+    border: 1px solid #E3E3E3;
+    text-align: center;
+    background: #fff;
+    margin-left: 10px;
+}
+
+/* 公共头部 */
+.H-shopCar li:nth-of-type(1) {
+	line-height: 43px!important;
+}

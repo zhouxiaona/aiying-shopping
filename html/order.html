@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>订单页面</title>
+		<link rel="icon" href="../img/iconImg.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../css/order.css">
+	</head>
+	<body>
+		<!-- 购物车顶部 -->
+		<div class="cart_outer">
+			<div class="cart_inner">
+				<div class="cart_inner_left">
+					<span><b>爱婴室会员&nbsp;</b>您好，欢迎来到爱婴室!</span>
+					<a href="homePage.html" onclick="(function(){clearCookie('userId')})()">[退出]</a>
+				</div>
+				<ul>
+					<li><a href="###">我的订单</a></li>
+					<li><a href="login.html">我的爱婴室</a></li>
+					<li><a href="###">帮助中心</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="big_content">
+			<!-- 购物车头部 -->
+			<div class="cart_header">
+				<div class="logo">
+					<a href="###"><img src="http://www.aiyingshi.com/Resource/images/common/logo.jpg" alt="logo_img"></a>
+				</div>
+				<div class="step_text">
+					<p class="img_wrap"></p>
+					<span>我的购物车</span>
+					<span>确认订单</span>
+					<span>成功提交订单</span>
+				</div>
+			</div>
+			<h1>填写并核对订单信息</h1>
+			<!-- 购物详细信息 -->
+			<ul class="orderOuter">
+				<li>
+					<p>
+						<span>选择收货地址</span>
+						<a>[修改]</a>
+					</p>
+					<ul class="orderInner">
+					<!-- 等待更新数据            数据格式小样 -->
+						<li>
+							<p>
+								<span class="lastName"></span>
+								<span class="lastPhone1"></span>
+								<!--<span class="lastPhone2">18898888888</span>-->
+							</p>
+							<p></p>
+						</li>
+					</ul>
+					<div class="line"></div>
+					<div class="info">
+						<div class="infoInner">
+							<div class="orderInnerTop">
+								<strong>选择收货地址（您最多可保存5个收货地址）</strong>
+							</div>
+							<div class="orderInnerBottom">
+								<ul class="listRadio">
+								<!-- 等待插入数据       数据格式小样 -->
+									
+								</ul>
+								<div class="tip">
+									<input type="radio" name="radioS" value="newAdres">
+									<span>使用新地址</span>
+								</div>
+								<div class="tipForm">
+									<p>
+										<b>&nbsp;*</b>
+										<span>收货人：</span>
+										<input type="text" name="goodsPeople">
+									</p>
+									<p>
+										<b>*</b>
+										<span>所在地区：</span>
+										<select class="privence">
+											<option value="n">请选择：</option>
+										</select>
+										<select class="city">
+											<option value="n">请选择：</option>
+										</select>
+										<select class="town">
+											<option value="n">请选择：</option>
+										</select>
+									</p>
+									<p>
+										<b>*</b>
+										<span>详细地址：</span>
+										<span class="infoAdres"></span><span class="infoAdres2"></span><span class="infoAdres3"></span>
+										<input type="text" name="adress">
+									</p>
+									<p>
+										<b>*</b>
+										<span>手机号码：</span>
+										<input type="text" name="phoneNum1">
+										<span>固定电话：</span>
+										<input type="text" name="phoneNum2">
+									</p>
+								</div>
+								<div class="save save1">
+									<a>保存收货人信息</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<p>
+						<span>配送方式</span>
+						<a href="###">[修改]</a>
+					</p>
+					<ul class="orderInner">
+					<!-- 等待插入数据           数据格式小样 -->
+						<li>
+							<p class="names">
+								
+							</p>
+							<p class="adres">
+								
+							</p>
+							<p class="timeInfo">
+								
+							</p>
+						</li>
+					</ul>
+					<div class="line"></div>
+					<div class="info">
+						<div class="infoInner">
+							<div class="orderInnerTop">
+								<strong>配送方式</strong>
+							</div>
+							<div class="orderInnerBottom">
+								<h2>其他可选择的配送方式：</h2>
+								<ul>
+								<!-- 等待插入数据               数据格式小样  -->
+									<li>
+										<p>
+											<input type="radio" name="radioS" value="0">
+											<span class="names">圆通快递</span>
+											<span class="adres">非江浙沪地区请使用圆通快递。 收到客户货款后的两个工作日内发货（双休日及国定假日将顺延）网站显示送货地区仅供参考，以圆通快递实际快递范围为准,以圆通快递实际快递范围为准。</span>
+										</p>
+										<p class="timeInfo">
+											每天下午15：00之后的订单，将安排在第二个工作日发货。
+										</p>
+									</li>
+								</ul>
+								<div class="save save2">
+									<a href="###">保存配送方式</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<p>
+						<span>选择支付方式</span>
+					</p>
+					<div class="choose">
+						<p>
+							<a href="###">网上银行支付</a>
+						</p>
+						<ul>
+							<!-- <li>
+								<input type="radio" name="bankRadio" id="bank_1" />
+								<label for="bank_1"></label>
+							</li> -->
+						</ul>
+					</div>
+				</li>
+				<li>
+					<p>
+						<span>发票信息</span>
+						<a href="###">[修改]</a>
+					</p>
+					<ul class="orderInner">
+					<!-- 等待插入数据           数据格式小样 -->
+						<li>
+							<p>
+								<span>普通发票（纸质）</span>
+								<span>个人</span>
+								<span>明细</span>
+							</p>
+						</li>
+					</ul>
+					<div class="type"><div>根据国家税务总局相关条例，2017年7月1日开始，凡在爱婴室官网、APP、淘宝、天猫购买的商品（海淘商品除外），如需开具公司抬头的发票，请提供纳税人识别号/统一社会信用代码，发票开具内容仅开具购买商品明细内容，如有疑问可咨询在线客服，感谢您的理解和配合。</div></div>
+					<div class="line"></div>
+					<div class="info">
+						<div class="infoInner">
+							<div class="orderInnerTop">
+								<strong>发票信息</strong>
+								<a href="###">保存发票信息</a>
+							</div>
+							<div class="orderInnerBottom">
+								<h3>类型和抬头</h3>
+								<ul class="listRadio">
+								<!-- 等待插入数据        数据格式小样 -->
+									<li>
+										<input type="radio" name="radioS">
+										<span class="per">个人</span>
+										<span class="pers">普通发票</span>
+										<a href="###">编辑</a>
+										<a href="###">删除</a>
+									</li>
+								</ul>
+								<p>
+									<input type="radio" name="radioPer">
+									<span>使用新的发票信息</span>
+								</p>
+								<div class="tool">
+									<p>
+										发票开具方式：
+										<strong>普通发票（纸质）</strong>
+									</p>
+									<div class="tools">
+										<p>
+											<span>发票抬头：</span>
+											<input type="radio" name="radioTool">个人
+											<input type="radio" name="radioTool">单位
+
+										</p>
+										<p>
+											<span>发票内容：</span>
+											<span>明细</span>
+										</p>
+									</div>
+								</div>
+								<div class="save save3">
+									<a href="###">保存发票信息</a>
+									<a href="###">不修改发票</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- 购物车列表 -->
+				<li>
+					<div class="goodsHeader">
+						<span>确认订单</span>
+						<a href="shoppingCart.html">返回修改购物车</a>
+					</div>
+					<div class="goodsTop">
+						<span>商品</span>
+						<span>单价</span>
+						<span>数量</span>
+						<span>重量</span>
+						<span>库存状况</span>
+					</div>
+					<ul class="goods_cart">
+					<!-- 等待插入数据    数据格式小样 -->
+						<!--<li>
+							<div class="img_wrap">
+								<a href="###"><img src="../img/main_left_top.jpg" alt=""></a>
+							</div>
+							<a href="###">
+								贝亲60g孕产妇护齿啫喱XA229</a>
+							<span class="price">￥129.00</span>
+							<span class="amount">1</span>
+							<span class="weight">0.3kg</span>
+							<span class="num">有</span>
+						</li>-->
+					</ul>
+				</li>
+				<!-- 最终结算 -->
+				<li class="lastCount">
+					<div class="countLeft fl">
+						<p>订单备注（限40字以内）：</p>
+						<p>
+							<input type="text" name="beizhu">
+						</p>
+					</div>
+					<div class="countRight fr">
+						<p class="title">最终订单金额</p>
+						<p>
+							<span>商品金额：</span>
+							<span></span>
+						</p>
+						<p>
+							<span>运费（2.3kg）：</span>
+							<span>+￥12.0</span>
+						</p>
+						<p>
+							<span>抵扣劵：</span>
+							<span>-￥0.0</span>
+						</p>
+						<div class="big clearfix">
+							<span>共节省：</span>
+							<span>0.00</span>
+						</div>
+						<div class="big clearfix">
+							<span>应付总额：</span>
+							<span></span>
+						</div>
+						<div class="submit">
+							<a>提交订单</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<!-- copyRight结尾 -->
+			<p class="last">Copyright©2002-2013 aiyingshi.com 上海爱婴室商务服务股份有限公司 版权所有 沪ICP备<a href="###">06061083号</a></p>
+		</div>
+	</body>
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="../js/base.js"></script>
+	<script src="../js/order.js"></script> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

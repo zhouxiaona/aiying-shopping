@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车页面</title>
+		<link rel="icon" href="../img/iconImg.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../css/shoppingCart.css">
+	</head>
+	<body>
+		<!-- 购物车顶部 -->
+		<div class="cart_outer">
+			<div class="cart_inner">
+				<div class="cart_inner_left">
+					<span>您好，欢迎来到爱婴室!</span>
+					<a href="login.html">[登录]</a>
+					<a href="register.html">[注册]</a>
+				</div>
+				<ul>
+					<li><a href="###">我的订单</a></li>
+					<li><a href="###">我的爱婴室</a></li>
+					<li><a href="###">帮助中心</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 购物车详情 -->
+		<div class="big_content">
+			<!-- 购物车头部 -->
+			<div class="cart_header">
+				<div class="logo">
+					<a href="homePage.html"><img src="../img/logo.png" alt="logo_img"></a>
+				</div>
+				<div class="step_text">
+					<span>我的购物车</span>
+					<span>确认订单</span>
+					<span>成功提交订单</span>
+				</div>
+			</div>
+			<h1>我的购物车</h1>
+			<!-- 购物车商品内容 -->
+			<table class="table_1">
+				<tr>
+					<th>
+						<input type="checkbox" name="selectAll" id="selectAll" />
+						<label for="selectAll">全选</label>
+					</th>
+					<th>商品</th>
+					<th colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;</th>
+					<th>单价</th>
+					<th>优惠</th>
+					<th>数量</th>
+					<th>合计</th>
+					<th>操作</th>
+				</tr>
+			</table>
+			<div class="info">爱婴室官网商品</div>
+			<table class="table_2">
+				<div class="spinner">
+					<div class="rect1"></div>
+					<div class="rect2"></div>
+					<div class="rect3"></div>
+					<div class="rect4"></div>
+					<div class="rect5"></div>
+				</div>
+				<!--<tr>
+					<td>
+						<input type="checkbox" name="selectDan" class="selectDan">
+					</td>
+					<td>
+						<a href="###"><img src="" alt="img"></a>
+					</td>
+					<td colspan="2" class="goodsName">
+						<a href="###">大王L38天使系列纸尿裤 尿不湿</a>
+					</td>
+					<td>
+						<span class="singlePrice">￥<i>188.00</i></span>
+					</td>
+					<td>
+						<span class="discount">优惠￥<i>100.00</i></span>
+					</td>
+					<td>
+						<input type="button" name="ys" class="ys" value="-">
+						<input type="text" name="amount" class="amount" value="1">
+						<input type="button" name="ys" class="ys" value="+">
+					</td>
+					<td>
+						<span class="countPrice">￥<i>188.00</i></span>
+					</td>
+					<td>
+						<a href="###" class="delete">删除</a>
+					</td>
+				</tr>-->
+				<!--	<tr>
+					<td>
+						<input type="checkbox" name="selectDan" class="selectDan">
+					</td>
+					<td>
+						<a href="###"><img src="" alt="img"></a>
+					</td>
+					<td colspan="2" class="goodsName">
+						<a href="###">大王L38天使系列纸尿裤 尿不湿尿不湿尿不湿尿不湿尿不湿不湿尿不湿尿不湿不湿尿不湿尿不湿</a>
+					</td>
+					<td>
+						<span class="singlePrice">￥<i>188.00</i></span>
+					</td>
+					<td>
+						<span class="discount">优惠￥<i>88.00</i></span>
+					</td>
+					<td>
+						<input type="button" name="ys" class="ys" value="-">
+						<input type="text" name="amount" class="amount" value="1">
+						<input type="button" name="ys" class="ys" value="+">
+					</td>
+					<td>
+						<span class="countPrice">￥<i>188.00</i></span>
+					</td>
+					<td>
+						<a href="###" class="delete">删除</a>
+					</td>
+				</tr>-->
+			</table>
+			<!-- 全选和删除按钮 -->
+			<div class="selectAll_2">
+				<div class="selectAll_left">
+					<input type="checkbox" name="selectAll_2" id="selectAll_2"/>
+					<label for="selectAll_2">全选</label>
+					<input type="button" name="deleteAll" class="deleteAll" value="删除选中的商品" />
+				</div>
+				<div class="selectAll_right">
+					<span>已选择<b>0</b>个赠品</span>
+				</div>
+			</div>
+			<!-- 购物车结算 -->
+			<div class="payMoney re">
+				<p class="p1">
+					<i class="ab" style="top: 10px; right: 10px">已优惠:<b>￥<i>0.00</i></b></i>
+					<span>总计（不含运费）:<b>￥<i>0.00</i></b></span>
+				</p>
+				<p class="p2">
+					<span>
+						<a href="###">继续购物</a>
+						<a href="###">去结算</a>
+					</span>
+				</p>
+			</div>
+			<!-- 删除弹窗口 -->
+			<ul class="goods">
+				<li>已删除商品,您可以重新购买或加关注：</li>
+				<!--<li>
+					<span>
+						<a href="###">大王NB62天使系列纸尿裤 尿不湿</a>
+					</span>
+					<div>
+						<span>￥188.00</span>
+						<span>1</span>
+						<span>
+							<a href="###">重新购买</a>
+							<a href="###">关注</a>
+						</span>
+					</div>
+				</li>-->
+			</ul>
+			<!-- copyRight结尾 -->
+			<p class="last">Copyright©2002-2013 aiyingshi.com 上海爱婴室商务服务股份有限公司 版权所有 沪ICP备<a href="###">06061083号</a></p>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/base.js"></script>
+	<script type="text/javascript" src="../js/jquery3.2.1.js"></script>
+	<script type="text/javascript" src="../js/shoppingCart.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

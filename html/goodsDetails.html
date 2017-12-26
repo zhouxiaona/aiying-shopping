@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情页</title>
+		<link rel="shortcut icon" href="http://images.aiyingshi.com/resource/images/ays.ico" type="image/x-icon">
+		<link rel="stylesheet" href="../css/goodsDestails.css">
+		<link rel="stylesheet" href="../css/base.css">
+		<link rel="stylesheet" href="../css/header.css">
+		<link rel="stylesheet" href="../css/footer.css">
+		<link rel="stylesheet" href="../css/iconfont.css">
+		<link rel="stylesheet" href="../css/share.css">
+	</head>
+	<body>
+		<!-- 网站头部 -->
+		<header>
+			<!-- 头部信息公告区 -->
+			<div class="H-top">
+				<div class="H-top_new clearfix">
+					<div class="H-login_register fl">
+						<span>您好,欢迎来到爱婴室！ <a href="login.html">[登录]</a>　<a href="register.html">[注册]</a></span>
+					</div>
+					<div class="H-userNews fr re">
+						<div class="H-userNews_my fl">
+							<a href="##">
+								<span>我的爱婴室
+									<i class="iconfont icon-xialacaidan"></i>
+								</span>
+							</a>
+						</div>
+						<div class="onepx fl"></div>
+						<div class="H-userNews_phone fl">
+							<a href="##">
+								<span>
+									<i class="iconfont icon-shouji"></i>手机购物更惊爆
+								<i class="iconfont icon-xialacaidan"></i>
+								</span>
+							</a>
+						</div>
+						<div class="onepx fl"></div>
+						<div class="fr">关注我们：
+							<i class="iconfont icon-xinlang"></i>
+							<i class="iconfont icon-weixin"></i>
+						</div>
+						<!-- 用户信息hover栏 -->
+						<div class="H-userNewsHover ab">
+							<ul>
+								<li><a href="##">我的订单</a></li>
+								<li><a href="##">我的抵用券</a></li>
+								<li><a href="##">我的积分</a></li>
+								<li><a href="##">帮助中心</a></li>
+								<li class="userCenter"><a href="##">账户中心</a></li>
+							</ul>
+						</div>
+						<!-- 手机购物扫码hover栏 -->
+						<div class="H-userPhoneHover ab">
+							<img src="../img/header-erweima.jpg" alt="二维码">
+							<p>扫描二维码下载</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 搜索框 -->
+			<div class="H-search clearfix">
+				<!-- logo和网站消息 -->
+				<div class="H-notice fl">
+					<a href="##"><img src="../img/logo.png" alt="logo"></a>
+					<ul class="in_b">
+						<li>
+							<a href="##">爱婴室直营门店说明</a>
+							<a href="##"><span><i class="iconfont icon-moreunfold"></i></span></a>
+						</li>
+						<li>
+							<a href="##">产品促销参与次数规则说明</a>
+							<a href="##"><span><i class="iconfont icon-moreunfold"></i></span></a>
+						</li>
+					</ul>
+				</div>
+				<div class="H-searchPart fl">
+					<div class="H-searchInput clearfix">
+						<div class="H-SInp fl">
+							<input type="text" placeholder="洗手液">
+						</div>
+						<div class="H-SBtn fl">
+							<a href="##"><i class="iconfont icon-magnifyingglass"></i>搜索</a>
+						</div>
+					</div>
+					<!-- 请求api -->
+					<div class="H-hotSearch">
+						<span>热门搜索：</span>
+						<span class="H-hotSearchs">
+							<!--<a href="##"><span>大王天使</span></a>
+							<a href="##"><span>大王天使</span></a>
+							<a href="##"><span>大王天使</span></a>
+							<a href="##"><span>大王天使</span></a>-->
+						</span>
+					</div>
+				</div>
+			</div>
+			<!-- 导航部分 + 购物车 -->
+			<!-- 网站导航 -->
+			<div class="H-nav">
+				<div class="H-nav_content clearfix">
+					<!-- 导航栏 -->
+					<div class="H-navigation fl re">
+						<ul class="clearfix">
+							<li class="H-allGoodsBtn fl">
+								<a href="##">全部商品分类
+									<i class="iconfont icon-212102"></i>
+								</a>
+							</li>
+							<li class="fl"><a href="homePage.html">首页</a></li>
+							<li class="fl"><a href="#">连锁店</a></li>
+							<li class="fl"><a href="#">APP专区</a></li>
+							<li class="fl"><a href="#">线下活动</a></li>
+							<li class="fl"><a href="#">童车童床</a></li>
+						</ul>
+						<!-- 全部商品分类hover效果 -->
+						<div class="H-nav_hover ab">
+							<!-- 商品类目 -->
+							<a href="##"><ul class="H-lisBtns">
+								<li>纸尿裤</li>
+								<li>玩具书籍</li>
+								<li>配方奶粉</li>
+								<li>营养辅食</li>
+								<li>喂养用品</li>
+								<li>洗涤护理</li>
+								<li>童车童床</li>
+								<li>服饰寝具</li>
+								<li>湿巾/纸品</li>
+							</ul></a>
+						</div>
+						<!-- 商品类目hover效果 -->
+						<div class="H-lis_hover ab">
+							<ul>
+								<li>
+									<span class="title"><a href="##">title1</a></span>
+									<span class="content"><a href="##">content1</a>　|　<a href="##">content2</a>　|　<a href="##">content3</a>　|　<a href="##">content4</a>　|　<a href="##">content5</a>　|　<a href="##">content6</a>　|　<a href="##">content7</a>　|　<a href="##">content1</a>　|　<a href="##">content2</a>　|　<a href="##">content3</a>　|　<a href="##">content4</a>　|　<a href="##">content5</a>　|　<a href="##">content6</a>　|　<a href="##">content7</a>　|　<a href="##">content2</a>　|　<a href="##">content3</a>　|　<a href="##">content4</a>　|　<a href="##">content5</a>　|　<a href="##">content6</a>　|　<a href="##">content7</a></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 购物车 -->
+					<div class="H-shopCar fr">
+						<ul>
+							<li class="fl">
+								<i class="iconfont icon-msnui-cart"></i>
+								<span>购物车(<b>0</b>)</span>
+							</li>
+							<li class="fl">
+								<span>立即结算</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="goodswrap clearfix">
+			<div class="goodsDetail">
+			<!-- 内容  头部 -->
+				<div class="gdtop">
+					<strong><a href="##" class="gdname_one"></a></strong>&nbsp;＞<span><a href="#" class="gdname_two"></a>
+				</div>
+				<!-- 内容  中部 -->
+				<div class="gdcontent">
+					<div class="gdcontentleft fl">
+						<div class="view">
+							<div class="minpic">
+								<div class="move"></div>
+								<div class="maxpic"></div>
+							</div>
+						</div>
+						<div class="goodsdisplay">
+							<a class="before fl">
+            					<img src="../img/goodsDetailsimg/before.jpg" height="56px" width="15px">
+            				</a> 
+            				<a class="next fr">
+                    			<img src="../img/goodsDetailsimg/next.jpg" height="56px" width="15px">
+                    		</a>
+                    		<div class="items">
+	                    		<div class="itemsbox">
+	                    			<ul class="picsbox">
+	                    				<li class="item_pic">
+	                    					<img alt="" src="../img/goodsDetailsimg/goods1.jpg">
+	                    				</li>
+	                    				<li class="item_pic">
+	                    					<img alt="" src="../img/goodsDetailsimg/goods.jpg">
+	                    				</li>
+	                    				<li class="item_pic">
+	                    					<img alt="" src="../img/goodsDetailsimg/goods.jpg">
+	                    				</li>
+	                    				<li class="item_pic">
+	                    					<img alt="" src="../img/goodsDetailsimg/goods.jpg">
+	                    				</li>
+	                    				<li class="item_pic">
+	                    					<img alt="" src="../img/goodsDetailsimg/goods.jpg">
+	                    				</li>
+	                    			</ul>
+	                    		</div>
+                    		</div>
+						</div>
+					</div>
+					<div class="gdcontentright fl">
+						<div>
+	                        <h1 class="goodsname"></h1>
+                    	</div>
+                    	<ul class="introduce">
+	                        <li>
+	                        	<span class="reference">参考价：</span><del><span>￥</span><span class="pricedel"></span></del>
+	                        </li>
+	                        <li>
+	                        	<span class="reference">会员价：</span><span class="tt">￥</span><span class="price tt"></span>
+	                          </a> 
+	                        </li>
+	                        <li>
+	                        	<span class="reference">商品编码：</span>
+	                        	<span class="refnum"></span>
+	                            
+	                        </li>
+	                        <li class="saleList">
+	                            <span class="sale">促销信息：</span>
+	                            <span class="promotion">
+	                            <span class="saleloading" style="display: none;"> 正在读取促销信息...</span>
+	                            <span>促销</span><span class="activity"></span></span>
+	                        </li>
+	                    </ul>
+	                    <div class="select">
+		                    <div class="note s">
+					            <div class="size fl"></div>
+					            <ul>
+					                <!-- <li class="s_goods cur">
+			                    		<a><span>M</span></a>
+			                        </li>
+			                        <li class="s_goods">
+			                           <a><span>SS</span></a>
+			                        </li> -->
+			                    </ul>
+					        </div>
+					        <div style="clear: both;"></div>
+					        <div class="note w">
+					            <div class="weight fl">选择克数：</div>
+					            <ul>
+					                <li class="w_goods cur">
+			                            <a><span>160ml</span></a>
+			                        </li>
+			                        <li class="w_goods">
+			                            <a><span>240ml</span></a>
+			                        </li>
+			                    </ul>
+					        </div>
+					        <div style="clear: both;"></div>
+					        <div class="note c">
+					            <div class="color fl">选择颜色：</div>
+					            <ul>
+					                <li class="c_goods cur">
+			                            <a><span>绿色</span></a>
+			                        </li>
+			                        <li class="c_goods">
+			                            <a><span>黄色</span></a>
+			                        </li>
+			                    </ul>
+					        </div>
+					        <div style="clear: both;"></div>
+					        <div class="note">
+					            <div class="amount fl">选择数量：</div>
+				           		<input type="button" value="-" class="reduce">
+                          		<input type="text" class="num" value="1">
+                          		<input type="button" value="+" class="add">
+                          		<span>&nbsp;&nbsp;&nbsp;&nbsp;该商品库存为<span class="savenum"></span>件</span>
+	                        </div>
+					       <div style="clear: both;"></div>
+					    </div>
+				        
+				        <div class="selected">
+                           <span>已选择:</span>
+                           <span class="checkword"></span>
+                   		</div>
+                        <div class="buy">
+                        	<a  class="fastbuy fl" href="#" title="立即购买"></a>
+                        	<a  class="addcar fr" href="" title="加入购物车"></a>
+                        </div>
+					    <div style="clear: both;"></div>
+					    <div class="collect">
+	                        <div class="mind fl">
+	                            <a title="点个赞" class="praise fl"></a><b class="praiseNum">0</b>
+	                            <a class="compare">
+	                            <input type="checkbox" class="cop"><span class="lab">&nbsp;&nbsp;加入对比</span></a>
+	                            <a class="jia">加入收藏夹</a>
+	                        </div>
+	                        <div class="share">
+	                            <span>分享:</span
+	                            <ul>
+	                            	<li>
+	                            		<a id="sharexin">
+	                                    	<img src="../img/goodsDetailsimg/xin.jpg"  alt="">
+	                                    </a>
+	                                </li>
+	                                <li>
+	                                	<a id="shareten">
+	                                    	<img src="../img/goodsDetailsimg/teng.jpg"  alt="">
+	                                    </a>
+	                                </li>
+	                                <li>
+	                                	<a id="sharedou">
+	                                    	<img src="../img/goodsDetailsimg/dou.jpg"  alt="">
+	                                    </a>
+	                                </li>
+	                                <li>
+	                                	<a id="sharewei">
+	                                    	<img src="../img/goodsDetailsimg/wei.jpeg"  alt="">
+	                                   	</a>
+	                                </li>
+		                        </ul>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+			<!-- 内容  底部 -->
+			<div class="gdbottom">
+				<div class="gdbottomleft fl">
+					<!-- 扫一扫 -->
+					<div class="sweep">
+						<div class="sweeptitle">扫一扫分享给朋友</div>
+                        <img  height="102px" width="102px" alt="扫一扫分享给朋友" src="../img/goodsDetailsimg/erwei.png">
+               		</div>
+					<!-- 猜你喜欢 -->
+					<div class="list">
+					    <div class="listtitle">猜你喜欢 </div>
+					    <ul>
+					    		<li>
+							    <div>
+							        <a target="_blank" href="">
+							            <img src="../img/goodsDetailsimg/like.jpg">
+							        </a> 
+							        <a target="_blank" class="list_name" href="" title="贝亲1入自然实感宽口径奶嘴LBA60">贝亲1入自然实感宽口径奶嘴LBA60</a>
+							        <p>
+							            <b>￥28.00</b>
+									</p>
+							    </div>
+							</li>
+						</ul>
+					</div>
+					<!-- 同类热销榜 -->
+					<div class="hot">
+						<div class="list">
+						    <div class="listtitle">同类热销榜</div>
+						    <ul>
+								<li>
+								    <div>
+								        <a target="_blank" href="">
+								            <img src="../img/goodsDetailsimg/like.jpg">
+								        </a> 
+								        <a target="_blank" class="list_name" href="" title="贝亲1入自然实感宽口径奶嘴LBA60">贝亲1入自然实感宽口径奶嘴LBA60</a>
+								        <p>
+								            <b>￥28.00</b>
+										</p>
+								    </div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 最近浏览 -->
+					<div class="watch">
+						<div class="list">
+						    <div class="listtitle">最近浏览</div>
+						    <ul>
+						    		<li>
+								    <div>
+								        <a target="_blank" href="">
+								            <img src="../img/goodsDetailsimg/like.jpg">
+								        </a> 
+								        <a target="_blank" class="list_name" href="" title="贝亲1入自然实感宽口径奶嘴LBA60">贝亲1入自然实感宽口径奶嘴LBA60</a>
+								        <p>
+								            <b>￥28.00</b>
+										</p>
+								    </div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="gdbottomright fl">
+					<div class="box">
+						<div class="bottomtitle">
+							<ul>
+								<li class="gdit tit spe">商品介绍</li>
+								<li class="gdrk tit">规格参数</li>
+								<li class="gdsp tit">线下门店</li>
+								<li class="gdse tit">售后保障</li>
+							</ul>
+						</div>
+						<!-- 商品介绍 -->
+						<div class="gdintroduce tab">
+							<ul>
+								<li>
+									<img src="../img/goodsDetailsimg/goodpic.jpg" alt="">
+								</li>
+							</ul>
+						</div>
+						<!-- 规格参数 -->
+						<div class="gdrank tab">
+							<table></table>
+						</div>
+						<!-- 线下门店 -->
+						<div class="gdshop tab">
+							<div class="gdvideo">
+								<img src="../img/btn.jpg" alt="按钮" class="startbtn">
+							</div>
+						</div>
+						<!-- 售后保障 -->
+						<div class="gdservice tab"></div>
+						<div class="bottomword">
+							<strong><b>权利声明：</b></strong><br>
+							爱婴室商城上的所有商品均为爱婴室自营商品，商品介绍及信息是爱婴室重要资源，未经许可，禁止非法转载使用。
+						</div>
+					</div>
+					<!-- 对比栏 -->
+					<div class="comparebox">
+						<div class="cpbox">
+							<div class="cpboxtitle">
+								<span><a>对比栏</a></span>
+								<span class="hiddenbtn"><a style="color: #005AA0;">隐藏</a></span>
+							</div>
+							<div class="cpboxlist">
+								<ul class="cpboxgoods">
+									<li>
+										<a  class="cpboxpic no fl" href="">1</a>
+										<div class="cpboxword fr">
+											<p class="add">你还可以继续添加</p>
+								        </div>
+									</li>
+									<li>
+										<a  class="cpboxpic no fl" href="">2</a>
+										<div class="cpboxword fr">
+											<p class="add">你还可以继续添加</p>
+								        </div>
+									</li>
+									<li>
+										<a  class="cpboxpic no fl" href="">3</a>
+										<div class="cpboxword fr">
+											<p class="add">你还可以继续添加</p>
+								        </div>
+									</li>
+									<li>
+										<a  class="cpboxpic no fl" href="">4</a>
+										<div class="cpboxword fr">
+											<p class="add">你还可以继续添加</p>
+								        </div>
+									</li>
+									<li>
+										<a class="cpboxlast" href="comparebox.html">对比</a>
+										<a class="cpboxdel" href="">清空全部</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- 网站尾部 -->
+		<footer>
+			<div class="F-nav">
+				<div class="F-nav_content">
+					<ul class="clearfix">
+						<li class="fl">
+							<h3>购物指南</h3>
+							<p><a href="##">如何购物</a></p>
+							<p><a href="##">会员制度</a></p>
+							<p><a href="##">积分政策</a></p>
+						</li>
+						<li class="fl">
+							<h3>配送方式</h3>
+							<p><a href="##">配送政策</a></p>
+							<p><a href="##">包裹签收</a></p>
+						</li>
+						<li class="fl">
+							<h3>支付方式</h3>
+							<p><a href="##">货到付款</a></p>
+							<p><a href="##">在线支付</a></p>
+						</li>
+						<li class="fl">
+							<h3>售后服务</h3>
+							<p><a href="##">退换货政策</a></p>
+							<p><a href="##">退货流程</a></p>
+							<p><a href="##">换货流程</a></p>
+							<p><a href="##">联系我们</a></p>
+						</li>
+						<li class="fl">
+							<h3>个人服务中心</h3>
+							<p><a href="##">忘记密码</a></p>
+							<p><a href="##">订单查询</a></p>
+							<p><a href="##">常见问题</a></p>
+						</li>
+						<li class="fl">
+							<h3>电话客服（仅收市话费）</h3>
+							<p>华东地区：400-620-8000</p>
+							<p>福州地区：400-845-5288</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="F-copyright">
+				<div class="F-copyright_up">
+					<div class="F-copyrightNav">
+						<span><a href="##">首页</a>　|　</span>
+						<span><a href="##">关于我们</a> | </span>
+						<span><a href="##">诚聘英才</a>　|　</span>
+						<span><a href="##">服务条款</a>　|　</span>
+						<span><a href="##">安全说明</a>　|　</span>
+						<span><a href="##">隐私声明</a>　|　</span>
+						<span><a href="##">友情链接</a>　|　</span>
+						<span><a href="##">供货标准</a></span>
+					</div>
+					<div class="F-copyrightNav">
+						<span>Copyright©2002-2014 aiyingshi.com 上海爱婴室商务服务股份有限公司 版权所有 沪ICP备<a href="##">09085725号</a></span>
+					</div>
+				</div>
+				<div class="F-copyright_down">
+					<a href="##"><img src="../img/footer-guohui.png" alt="guohui">
+					<p>沪公网安备<br>31011502000408号</p></a>
+					<a href="##"><img src="../img/footer-zhengxinwang.png" alt="zhengxinwang"></a>
+					<a href="##"><img src="../img/footer-shgongshang.gif" alt="shgongshang"></a>
+				</div>
+			</div>
+		</footer>
+	</body>
+	<script src="../js/jquery3.2.1.js"></script>
+	<script type="text/javascript" src="../js/base.js"></script>
+	<script src="../js/share.js"></script>
+	<script type="text/javascript" src="../js/goodsDetails.js"></script>
+	<script type="text/javascript" src="../js/header.js"></script>
+</html>

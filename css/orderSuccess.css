@@ -1,0 +1,274 @@
+*{
+	font-size: 12px;
+	font-family: simsun;
+}
+/*购物车顶部*/
+.cart_outer{
+	background: #F7F7F7;
+    border-bottom: 1px solid #EEEEEE;
+    color: #898989;
+    min-width: 1200px;
+    height: 30px;
+    line-height: 30px;
+}
+.cart_inner{
+	width:975px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.cart_inner .cart_inner_left{
+	float: left;
+}
+.cart_inner .cart_inner_left b{
+	color: #f6ae00;
+    font-weight: normal;
+}
+.cart_inner ul{
+	float: right;
+}
+.cart_inner ul li{
+	float: left;
+	margin-left: 5px;
+}
+.cart_inner ul li:nth-of-type(n+2)::before{
+	content:"|";
+	display:inline-block;
+	clear:both;
+	margin-right: 5px;
+}
+/*购物车详情*/
+.big_content{
+	width:975px;
+	margin:0 auto;
+}
+/*购物车头部*/
+.cart_header{
+	box-sizing: border-box;
+	padding:10px 0;
+	overflow:hidden;
+}
+.cart_header .logo{
+	width:140px;
+	height:60px;
+	background-color: lightgray;
+	float: left;
+}
+.cart_header .logo img{
+	width:140px;
+	height:60px;
+}
+.cart_header .step_text{
+	float: right;
+	width: 528px; 
+}
+.cart_header .step_text .img_wrap{
+	float: left;
+	width: 528px;
+    height: 40px;
+	background: url("http://www.aiyingshi.com/Resource/images/shopping/step.png") 0 0 no-repeat;
+}
+.cart_header .step_text span{
+	float: left;
+	width:176px;
+	text-align: center;
+	color: #dcdcdc;
+}
+.cart_header .step_text span:nth-of-type(3){
+	color: #e43e41;
+}
+/*订单详情页面*/
+.menuTop{
+	border-top: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left:2px solid #eee;
+    border-right:2px solid #eee;
+    margin-top: 20px;
+}
+.menuTop .menuTI{
+    padding: 20px 30px 30px;
+}
+.menuTop .menuTI .TIT{
+	background: url("../img/gou.png") no-repeat center top;
+    height: 40px;
+}
+.menuTop .menuTI .TIB{
+	line-height: 40px;
+	text-align: center;
+	margin-top: 10px;
+}
+.menuTop .menuTI .TIB h3{
+	font-size: 30px;
+}
+.menuTop .menuTI .TIB b{
+	font-size: 30px;
+	color: orange;
+}
+.menuTop .menuTI .TIB span{
+	font-size:20px;
+}
+/*官网订单号*/
+.menuBo{
+	border-top: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left:2px solid #eee;
+    border-right:2px solid #eee;
+    margin-top: 20px;
+}
+.menuBo .menuInner{
+	padding:20px 30px 30px;
+}
+.menuTitle{
+	height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    color: #595b5a;
+}
+.menuTitle span{
+	margin:0 10px;
+}
+.outer{
+    background: #f3f3f3;
+    border: 1px solid #dedede;
+    padding: 2px;
+    margin-top: 10px;
+    height:48px;
+    overflow: hidden;
+    transition: height 0.3s;
+}
+.outer .top{
+	height: 50px;
+    line-height: 50px;
+    background: #fcfcfc;
+    padding: 0 15px;
+}
+.top a{
+	float:right;
+	background: url("../img/jiantou2_1.png") no-repeat scroll right;
+    padding-right: 20px;
+}
+.inner{
+	background: #ffffff;
+    border-top: 1px solid #dedede;
+    color: #4f4f4f;
+    padding: 10px 45px 50px;
+}
+.inner .aBot{
+	border: 1px solid #dedede;
+    margin: 10px auto;
+    height: 38px;
+    line-height: 38px;
+}
+.inner .aBot span{
+	float:left;
+	width: 80px;
+    text-align: center;
+    border-right: 1px solid #dedede;
+}
+.inner .aBot span:nth-of-type(2){
+	border-right:none;
+}
+
+.bill{
+    line-height: 30px;
+    height: 30px;
+    margin-top: 20px;
+    color: #4F4F4F;
+}
+.bill b{
+	font-weight: bold;
+    font-size: 16px;
+    color: #f24444;
+}
+.payForm{
+    background: #f3f3f3;
+    border: 1px solid #dedede;
+    padding: 2px;
+    margin-top: 10px;
+    height:100px;
+    transition: height 0.3s;
+    overflow: hidden;
+}
+.payTitle{
+    height: 50px;
+    line-height: 50px;
+    background: #fcfcfc;
+    padding: 0 15px;
+    border-bottom: 1px solid #dedede;
+}
+.payTitle>a{
+	float:right;
+	background: url("../img/jiantou2_1.png") no-repeat scroll right;
+    padding-right: 20px;
+}
+.nowPay{
+   height: 50px;
+   line-height: 50px;
+   background: #fcfcfc;
+   padding: 0 15px;
+}
+.nowPay .img_box{
+	height: 28px;
+    display: inline-block;
+    width: 158px;
+    margin-left: 10px;
+    margin-top: 12px;
+    background: url('../img/bank-logo.png') 0px -56px no-repeat;
+}
+.payInner{
+	padding:15px 15px;
+	background: #fff;
+	overflow: hidden;
+}
+.payInner ul li{
+	background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 8px;
+    padding: 6px;
+    width: 190px;
+}
+.payInner ul li input{
+	float: left;
+    margin-left: 10px;
+    position: relative;
+    top: 8px;
+}
+.payInner ul li label{
+	height: 28px;
+    display: inline-block;
+    width: 158px;
+    float: left;
+    margin-left: 10px;
+    background: url('../img/bank-logo.png') 0px 0px no-repeat;
+}
+.payBtn{
+	height: 40px;
+    margin: 10px auto;
+}
+.payBtn a{
+	float: left;
+    height: 40px;
+    line-height: 40px;
+    width: 180px;
+    background: #f23333;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+   
+
+
+
+
+
+/*copyRight结尾*/
+.big_content .last{
+	text-align:center;
+	color: #7F7F7F;
+	line-height: 30px;
+	font-family:simsun;
+	margin-top:10px;
+}

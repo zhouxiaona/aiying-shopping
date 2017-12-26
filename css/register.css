@@ -1,0 +1,160 @@
+/*公共样式*/
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+ul,li{
+	margin: 0;
+	padding: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+/*样式*/
+.zctop{ 
+	margin: 0px auto; 
+	padding: 0px; 
+	width: 963px;
+}
+.zctop img{
+	width: 140px;
+}
+.zctitle{ 
+	font-size: 16px; 
+	color: #fff; 
+	background: url(../img/registerimg/zucetitle.jpg) no-repeat; 
+	width: 963px; 
+	height: 31px; 
+	text-indent: 16px; 
+	line-height: 31px;  
+	font-weight: bold; 
+	margin: 0px auto; 
+	margin-top: 3px;
+}
+.zcneirong{ 
+	width: 919px; 
+	border: 2px solid #58cce9;
+	margin: 0px auto; 
+	padding: 20px;
+}
+.zcneirong::after{
+	display: block;
+	content: "";
+	clear: both;
+}
+.zcleftpic img,.zcrightpic img{
+	width: 250px; 
+	height: 302px;
+}
+.zcright{
+	 width: 370px;  
+	 margin-left: 22px; 
+	 height: 320px; 
+	 padding-left: 15px; 
+	 border-left: 1px solid #d9d9d9; 
+	 color: #8b8b8b; 
+	 position: relative;
+}
+.one{
+	width: 26%;
+}
+.two{
+	width: 74%;
+	height: 45px;
+}
+.zcbox{
+	width: 208px; 
+	height: 24px; 
+	border: 1px solid #aeaeae; 
+	padding-left: 2px; 
+	color: #999999;
+}
+ .tip-icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/registerimg/error.png) no-repeat;
+}
+.line{
+	background: url(../img/registerimg/line.jpg) no-repeat;
+}
+.rule{
+	padding-left: 28px;
+}
+.pik{
+ 	 padding-top: 15px; 
+ 	 padding-left: 28px;
+}
+.zcbottom1{ 
+	color: #929292; 
+	width: 963px; 
+	margin: 0px auto; 
+	text-align: center; 
+	margin-top: 36px;
+}
+.zcbottom1 a{ 
+	color: #939393; 
+}
+.zcbottom2{ 
+	color: #929292; 
+	width: 963px; 
+	margin: 0px auto; 
+	text-align: center; 
+	line-height: 24px;
+}
+.zcbottom3{ 
+	width: auto; 
+	border-bottom: 18px solid #dcf2f9;
+}
+.zcbottom3_1{ 
+	width: 963px; 
+	margin: 0px auto; 
+	text-align: center; 
+	color: #ff9c00; 
+	margin-top: 24px;
+}
+.zcbottom3_1 font{ 
+	color: #999;
+}
+.zcbottom3_1 span{ 
+	color: #000;
+}
+/***验证码**/
+.verify-input-area{
+	margin-left: -11px;
+	float: right;
+}
+.verify-input-area input{
+	width: 83%;
+	height: 23px;
+}
+.cerify-code-panel{
+	float: right;
+	padding-right: 60px;
+}
+.verify-code{
+	float: right;
+	border:1px solid lightgray;
+}
+.verify-code-area {
+	float: right;
+}
+
+
+
+
+
+
+
+

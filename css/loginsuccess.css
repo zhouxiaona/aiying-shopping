@@ -1,0 +1,200 @@
+.lgwrap{
+	margin: 50px auto;
+	width: 960px;
+	height: 500px;
+	font-size: 14px;
+}
+.lgwrapleft{
+	width: 190px;
+	height: 500px;
+	border: 1px solid #0095AD;
+	border-radius: 5px;
+}
+.lgwraptitle{
+	margin-bottom: 10px;
+}
+.lgwraptitle h2{
+	font-size: 16px;
+	height: 22px;
+	letter-spacing: 2px;
+	color: white;
+	padding: 5px 0 5px 15px;
+	background: #0095AD;
+}
+.lgwrap ul h3{
+    padding-left: 20px;
+    line-height: 22px;
+    color: #0097A9;
+	width: 170px;
+    height: 22px;
+  	background-image: url(../img/leftbg.jpg);
+}
+.lgwrap ul li{
+	color: #7F7F7F;
+	list-style: inside disc;
+    margin: 8px 35px;
+}
+.lgwrap ul li a{
+	color: #7F7F7F;
+}
+.lgwrapright{
+	height: 500px;
+	width: 750px;
+	border: 1px solid #BEBEBE;
+	border-radius: 5px;
+	position: relative;
+}
+.lgwrappageone{
+    letter-spacing: 2px;
+    padding: 7px 0 7px 15px;
+    border-bottom: 1px solid #BEBEBE;
+}
+.lgwrappageone a{
+	font-size: 14px;
+}
+.lgwrappagetwo{
+	background-color: #FFF8EE;
+    width: 710px;
+    height: 103px;
+    min-height: 75px;
+    margin: 10px;
+    padding: 10px 0 0 15px;
+    border: 1px solid #FF9C01;
+}
+.lgwrappage tr{
+	height: 35px;
+}
+.lgwrappage td{
+	width: 50%;
+}
+.lgwrappage input{
+	height: 20px;
+}
+.lgwrap table a{
+	font-size: 14px;
+	color: #0097A9;
+}
+.lgwrap table em{
+	color: red;
+}
+.lgwrappic1{
+	margin-left: 35%;
+	margin-top: 10px;
+}
+.lgwrappic2{
+	margin-left: 25%;
+	margin-top: 20px;
+}
+/***修改密码****/
+.lgwraprepsd tr{
+	height: 45px;
+}
+.lgwraprepsd td{
+	width: 64%;
+}
+.lgwraprepsd input{
+	height: 25px;
+}
+/***修改手机号****/
+.rephonenum{
+	margin: -146px 0px 0px -273px;
+    padding: 0px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    display: none;
+    width: 540px;
+    color: #444;
+    border: 3px solid #e5e5e5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+	border-radius: 5px;
+}
+.rephonenumcontnet{
+	background: #fff;
+	padding:15px 0px;
+}
+.rephonenumtit{
+	height: 30px;
+    line-height: 30px;
+    color: #666;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    background: #f7f7f7;
+}
+.rephonenumtit a{
+	float: right;
+	font-size: 16px;
+    font-weight: bold;
+}
+.rephonenum table{
+	margin-top: 30px;
+	margin-left: 20px;
+}
+.rephonenum table tr{
+	height: 36px;
+}
+.rephonenum table input{
+	height: 24px;
+	margin-right: 10px;
+}
+.rephonenum li input{
+	border: 1px solid #c3c3c3;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    padding: 0 15px;
+    height: 24px;
+    line-height: 18px;
+    margin: 10px 20px 15px 0;
+    background: #eee;
+}
+.rephonenum li .choose{
+	background: #0095AD;
+}
+/**修改手机号的弹框***/
+.rebox{
+	width: 200px;
+	height: 50px;
+	border : 1px solid red;
+	margin-top: -32px;
+	margin-left: 100px;
+	font-size: 24px;
+	color: red;
+	text-align: center;
+	line-height: 50px;
+	display: none;
+}
+.psd{
+	margin: 20px 0px 10px 180px;
+}
+/***验证码**/
+.verify-input-area{
+	float: right;
+}
+.verify-input-area input{
+	width: 83%;
+	height: 23px;
+}
+.cerify-code-panel{
+	float: right;
+	padding-right: 60px;
+}
+.verify-code{
+	float: right;
+	border:1px solid lightgray;
+}
+.verify-code-area {
+	float: right;
+}
+
+
+
+
+
+
+
+

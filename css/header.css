@@ -1,0 +1,417 @@
+/*************************公共部分**************************/
+.H-top_new, .H-search, .H-nav_content {
+	margin: 0 auto;
+	width: 1200px;
+}
+/***********************公共部分结束*************************/
+
+/*************************顶部消息**************************/
+.H-top {
+	font-size: 13px;
+	background-color: #f6f6f6;
+	border-bottom: 1px solid lightgray;
+}
+
+.H-top_new {
+	line-height: 29px;
+}
+
+.H-login_register {
+	width: 400px;
+}
+
+.H-login_register a span {
+	color: gray;
+}
+
+.H-login_register a:hover {
+	color: red;
+}
+
+.H-userNews {
+	color: gray;
+	width: 478px;
+}
+
+.H-userNews .onepx {
+	margin: 8px 10px 0;
+	width: 1px;
+	height: 14px;
+	background-color: gray;
+}
+
+.H-userNews_my, .H-userNews_phone {
+	padding: 0 7px 0 7px;
+	height: 30px;
+}
+
+.H-userNews_my:hover, .H-userNews_phone:hover {
+	background-color: orange;
+}
+
+.H-userNews_my:hover span, .H-userNews_phone:hover span {
+	color: white;
+}
+
+.H-userNews_phone:hover i {
+	color: skyblue;
+}
+.H-userNewsHover {
+	overflow: hidden;
+	width: 88px;
+	height: 0;
+	top: 30px;
+	transition: .2s;
+	background-color: whitesmoke;
+	border-left: 1px solid lightgray;
+	border-right: 1px solid lightgray;
+}
+.H-userNewsHover li {
+	text-align: center;
+	line-height: 30px;
+	border-bottom: 1px solid lightgray;
+}
+.H-userNewsHover li:hover {
+	background-color: #ff8600;
+	color: white;
+}
+.H-userNewsHover li a {
+	display: block;
+	line-height: 30px;
+}
+.H-userPhoneHover {
+	top: 30px;
+	left: 111px;
+	width: 128px;
+	overflow: hidden;
+	height: 0;
+	text-align: center;
+	background: whitesmoke;
+	border: 1px solid lightgray;
+	border-top: none;
+	transition: .2s;
+}
+
+.icon-xinlang, .icon-weixin {
+	font-size: 17px;
+}
+
+.icon-weixin:hover {
+	color: green;
+}
+
+.icon-xinlang:hover {
+	color: red;
+}
+
+.icon-xialacaidan {
+	font-size: 12px !important;
+}
+/***********************顶部消息结束*************************/
+
+/*************************搜索部分**************************/
+.H-search {
+	margin: 10px auto 10px;
+	padding: 10px 0 10px 0;
+}
+
+.H-notice>* {
+	vertical-align: top;
+}
+
+.H-notice ul {
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+.H-notice a {
+	display: inline-block;
+}
+
+.H-notice a:hover {
+	color: skyblue;
+}
+
+.H-notice a:nth-of-type(2n + 1) {
+	width: 144px;
+}
+
+.H-notice li:before {
+	vertical-align: top;
+	margin-top: 11px;
+	margin-right: 5px;
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background: gray;
+	content: "";
+	display: inline-block;
+}
+
+.H-notice li span {
+	vertical-align: top;
+	display: inline-block;
+	margin-top: 2px;
+	margin-left: 5px;
+	width: 16px;
+	height: 14px;
+	border: 1px solid lightgray;
+}
+
+.H-notice li:nth-of-type(1) i {
+	margin-top: -2px;
+	display: inline-block;
+	transform: rotate(180deg);
+}
+
+.H-searchPart {
+	padding-left: 68px;
+	padding-top: 14px;
+	width: 525px;
+}
+
+.H-searchInput {
+	width: 521px;
+	height: 31px;
+	border: 2px solid #f8898f;
+}
+
+.H-SInp input {
+	padding-left: 10px;
+	font-size: 16px;
+	width: 430px;
+	outline: none;
+	height: 31px;
+	border: none;
+}
+
+.H-SBtn {
+	display: inline-block;
+	width: 81px;
+	background-color: #f8898f;
+}
+
+.H-SBtn a {
+	color: white;
+	display: block;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.icon-magnifyingglass {
+	font-weight: bold;
+	font-size: 20px !important;
+}
+
+.H-hotSearch span {
+	font-size: 12px;
+	color: gray;
+}
+
+.H-hotSearch .H-hotSearchs span:hover {
+	color: skyblue;
+}
+/***********************搜索部分结束*************************/
+
+/*************************导航部分**************************/
+/*-------------网站导航*/
+.H-nav {
+	background-color: #f6f6f6;
+	border-top: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+}
+
+.H-navigation>ul li a {
+	display: block;
+	line-height: 42px;
+	font-size: 15px;
+	padding: 0 18px 0 18px;
+	border-right: 1px solid lightgray;
+}
+
+.H-navigation>ul li a:hover {
+	color: #44d9ec;
+}
+
+.H-navigation>ul li:nth-of-type(1) a {
+	padding-left: 40px;
+	background-color: #44d9ec;
+	color: white;
+}
+
+/*全部商品分类hover效果*/
+.H-nav_hover {
+	box-sizing: border-box;
+	overflow: hidden;
+	height: 0px;
+	width: 170px;
+	transition: .4s;
+	border-left: 1px solid lightgray;
+	border-right: 1px solid lightgray;
+	z-index: 100;
+}
+
+.H-nav_hover li {
+	cursor: pointer;
+	text-align: center;
+	line-height: 48px;
+	transition: .1s;
+	font-size: 16px;
+	background-color: white;
+	border-bottom: 1px solid lightgray;
+}
+
+/*lis类目hover效果// width: 0;*/
+.H-lis_hover {
+	overflow: hidden;
+	top: 44px;
+	left: 169px;
+	width: 0px;
+	min-height: 440px;
+	z-index: 10;
+	background-color: #f6e0e0;
+	box-shadow: 0px 0px 2px orange;
+}
+
+.H-lis_hover ul {
+	padding-left: 10px;
+}
+
+.H-lis_hover ul li {
+	line-height: 30px;
+	color: gray;
+}
+
+.H-lis_hover ul li:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.H-lis_hover ul li .title {
+	float: left;
+	display: inline-block;
+	text-align: center;
+	width: 100px;
+}
+
+.H-lis_hover ul li .content {
+	padding-right: 20px;
+	float: right;
+	width: 680px;
+}
+
+.H-lis_hover ul li a {
+	display: inline-block;
+	text-align: center;
+	min-width: 52px;
+	font-size: 13px;
+	color: gray;
+}
+
+.H-lis_hover ul li .title a {
+	color: #f8898f;
+}
+
+.H-lis_hover ul li .content a:hover {
+	color: skyblue;
+}
+
+.icon-msnui-cart {
+	font-size: 22px !important;
+}
+
+.H-shopCar li {
+	padding: 0 10px 0 10px;
+	font-size: 14px;
+	line-height: 40px;
+}
+
+.H-shopCar li:nth-of-type(1) {
+	background-color: orange;
+}
+
+.H-shopCar li:nth-of-type(2) {
+	line-height: 43px;
+	background-color: #464646;
+}
+
+.H-shopCar li * {
+	cursor: pointer;
+	color: white;
+	vertical-align: top;
+}
+/***********************导航部分结束*************************/
+/**********************************************************/
+/*导航加载动画*/
+.spinner {
+    margin: 50px auto;
+    width: 50px;
+    height: 100px;
+    text-align: center;
+    font-size: 10px;
+}
+ 
+.spinner > div {
+  background-color: #ff6800;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+   
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+ 
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+ 
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+ 
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+ 
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+ 
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) } 
+  20% { -webkit-transform: scaleY(1.0) }
+}
+ 
+@keyframes stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

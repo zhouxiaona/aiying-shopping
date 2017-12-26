@@ -1,0 +1,311 @@
+*{
+	font-size: 12px;
+}
+/*购物车顶部*/
+.cart_outer{
+	background: #F7F7F7;
+    border-bottom: 1px solid #EEEEEE;
+    color: #898989;
+    min-width: 1200px;
+    height: 30px;
+    line-height: 30px;
+}
+.cart_inner{
+	width:975px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.cart_inner .cart_inner_left{
+	float: left;
+}
+.cart_inner ul{
+	float: right;
+}
+.cart_inner ul li{
+	float: left;
+	margin-left: 5px;
+}
+.cart_inner ul li:nth-of-type(n+2)::before{
+	content:"|";
+	display:inline-block;
+	clear:both;
+	margin-right: 5px;
+}
+/*购物车详情*/
+.big_content{
+	width:975px;
+	margin:0 auto;
+}
+/*购物车头部*/
+.cart_header{
+	box-sizing: border-box;
+	padding:10px 0;
+	overflow:hidden;
+}
+.cart_header .logo{
+	width:140px;
+	height:60px;
+	background-color: lightgray;
+	float: left;
+}
+.cart_header .logo img{
+	width:140px;
+	height:60px;
+}
+.cart_header .step_text{
+	float: right;
+	width: 528px;
+    height: 35px;
+    padding-top: 40px;
+    background: url("http://www.aiyingshi.com/Resource/images/shopping/step.png") 0 -85px no-repeat;
+}
+.cart_header .step_text span{
+	float: left;
+	width:176px;
+	text-align: center;
+	color: #dcdcdc;
+}
+.cart_header .step_text span:nth-of-type(1){
+	color: #e43e41;
+}
+.big_content h1{
+	height:35px;
+	font-size:24px;
+	font-family: simsun;
+}
+/*购物车商品内容*/
+table{
+	width:975px;
+    border: 1px solid #eee;
+    font-family:simsun;
+    border-collapse: collapse; 
+}
+table tr{
+	border: 1px solid #eee;
+	height: 110px; 
+}
+.table_1 tr:nth-of-type(1){
+	background: #f7f7f7;
+	height:32px;
+}
+.info{
+	width:975px;
+	padding:20px 0 6px 10px;
+	box-sizing:border-box;
+}
+.table_2 tr:nth-of-type(1){
+	background-color:white;
+}
+.table_2 tr td{
+	width:100px;
+	text-align:center;
+}
+.table_2 tr td:nth-of-type(2) a{
+	display:inline-block;
+	width: 67px;
+	height: 67px;
+	border:1px solid black;
+}
+.table_2 tr td:nth-of-type(3){
+	width:150px;
+	text-align:left;
+}
+.table_2 tr td:nth-of-type(6){
+	text-align: left;
+	width:102px;
+}
+.table_2 tr td:nth-of-type(6) input:nth-of-type(2){
+	width:40px;
+	outline: none;
+}
+/*全选和删除按钮*/
+.selectAll_2{
+	overflow:hidden;
+	padding:20px 0 10px;
+}
+.selectAll_2 .selectAll_left{
+	float: left;
+}
+.selectAll_2 .selectAll_right{
+	float: right;
+}
+.selectAll_2 .selectAll_right span b{
+	color: #f24444;
+}
+.big_content .table_2 .amount {
+	text-align: center;
+}
+/*购物车结算*/
+.payMoney{
+	border-bottom: 1px solid #EEEEEE;
+    padding: 50px 10px 10px 20px;
+    border: 1px solid #d7d7d7;
+    background: #f2f2f2;
+    font-family:simsun;
+    line-height:32px;
+}
+.payMoney p{
+	overflow:hidden;
+}
+.payMoney p span{
+	float: right;
+}
+.payMoney .p1 span b{
+	font-size: 20px;
+	color: #f24444;
+}
+.payMoney .p2 span a{
+	display:inline-block;
+	margin-left: 5px;
+    border-radius: 3px;
+    width: 115px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 16px; 
+}
+.payMoney .p2 span a:nth-of-type(1){
+	background-color: #fff;
+    color: #000;
+    border: 1px solid #eee;
+}
+.payMoney .p2 span a:nth-of-type(2){
+	color: #FFF;
+    background-color: #A1A8B0;
+}
+/*删除弹窗口*/
+.goods li{
+	overflow:hidden;
+	font-family:simsun;
+	line-height: 25px;
+    border-bottom: 1px solid #E4E4E4;
+}
+.goods li:nth-of-type(n+2) span{
+	float: left;
+}
+.goods li:nth-of-type(n+2) div{
+	float: right;
+}
+.goods li:nth-of-type(n+2) div span{
+	float: left;
+	margin:0 50px;
+}
+.goods li:nth-of-type(n+2) div span:nth-of-type(3) a:nth-of-type(1):after{
+	content:"|";
+	display:inline-block;
+	clear:both;
+	margin-left:6px;
+}
+/*copyRight结尾*/
+.last{
+	text-align:center;
+	color: #7F7F7F;
+	line-height: 30px;
+	font-family:simsun;
+}
+
+/* 加载动画 */
+.spinner {
+    margin: 50px auto;
+    width: 50px;
+    height: 100px;
+    text-align: center;
+    font-size: 10px;
+}
+ 
+.spinner > div {
+  background-color: #ff6800;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+   
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+ 
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+ 
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+ 
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+ 
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+ 
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) } 
+  20% { -webkit-transform: scaleY(1.0) }
+}
+ 
+@keyframes stretchdelay {
+  0%, 40%, 100% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% {
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

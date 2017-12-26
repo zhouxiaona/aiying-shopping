@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>用户登录 - 爱婴室 母婴用品一站式购物平台</title>
+		<link rel="icon" href="../img/iconImg.ico" type="image/x-icon">
+		<meta name="keywords" content="用户登录 - 爱婴室">
+		<meta name="description" content="登录后，继续享受您的购物之旅 - 爱婴室">
+		<link rel="SHORTCUT ICON" href="http://www.aiyingshi.com/resource/images/ays.ico">
+    	<link href="../css/login.css" rel="stylesheet" type="text/css">
+    	<link href="../css/register.css" rel="stylesheet" type="text/css">
+
+	</head>
+	<body>
+		<!-- 登录头部 -->
+		<div class="zctop">
+			<a href="homePage.html">
+				<img src="../img/registerimg/logo.jpg" >
+			</a>
+		</div>
+		<!-- 登录内容 -->
+		<div class="zccontent">
+			<div class="zctitle">用户登录</div>
+			<div class="zcneirong">
+				<form>
+					<div class="zcleft fl">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin-left:40px;">
+							<tr>
+								<td class="one1" align="right">账号名：</td>
+								<td class="two1"><label for="textfield"></label>
+                    				<input type="text" name="userName" id="userName" class="zcbox" placeholder="用户名/手机号/邮箱" maxlength="50"></td>
+							</tr>
+							<tr>
+								<td class="one1" align="right">密码：</td>
+                				<td class="two1">
+                    				<input name="password" id="password" type="password" class="zcbox">
+                    				<span style="text-decoration:underline; color:#8b8b8b;"><a style="color:gray;" href="http://www.aiyingshi.com/customer/ForgetPwdStepOne.aspx">
+                        			忘记密码？</a></span>
+                				</td>
+							</tr>
+							<tr>
+                				<td class="one">&nbsp;</td>
+                				<td class="two">
+                    				<label for="checkRemember">
+                        				<input type="checkbox" name="checkRemember" id="checkRemember">记住登录信息
+                    				</label>
+                				</td>
+           					</tr>
+           					<tr>
+				                <td width="29%" align="right"></td>
+				                <td width="71%">
+				                    <div style="display:none" id="Error">
+				                        <i class="tip-icon"></i><span style="color:red;"></span>
+				                    </div>
+				                </td>
+				            </tr>
+				            <tr>
+				                <td>&nbsp;</td>
+				                <td height="50">
+				                    <img src="../img/registerimg/login.jpg" onclick="Check()" border="0" align="absmiddle">
+				                    <a href="register.html" align="">
+				                        <img align="absmiddle" src="../img/registerimg/regist.jpg">
+				                    </a>
+				                </td>
+				            </tr>
+				            <tr>
+                				<td colspan="2" class="line2">&nbsp;</td>
+           					</tr>
+						</table>
+					</div>
+				</form>
+				
+				<div class="zcright fr">
+			        <b style="color:#313131;">您还不是爱婴室会员吗？</b>
+			        <div style="padding-top:21px;width:82%;">现在免费注册成为爱婴室用户，不出家门就能享受更多的优惠哦！</div>
+			    </div>
+			</div>
+		</div>
+		<!-- 登录底部 -->
+		<div class="zcbottom">
+			<div class="zcbottom1">
+				<a href="http://www.aiyingshi.com/" target="_blank">首页</a>
+	                |
+	                <a href="http://www.aiyingshi.com/Help/Default.aspx?SysNo=7#1" target="_blank">
+	                    关于我们</a>
+	                |
+	                <a href="http://www.aiyingshi.com/Help/Default.aspx?SysNo=011" target="_blank">
+	                    诚聘英才</a>
+	                |
+	                <a href="http://www.aiyingshi.com/Help/Default.aspx?SysNo=5#" target="_blank">
+	                    服务条款</a>
+	                |
+	                <a href="http://www.aiyingshi.com/Help/Default.aspx?SysNo=5#3" target="_blank">
+	                    安全说明</a>
+	                |
+	                <a href="http://www.aiyingshi.com/Help/Default.aspx?SysNo=5#4" target="_blank">
+	                    隐私声明</a>
+	                |
+	                <a href="http://www.aiyingshi.com/help/friendlink.aspx" target="_blank">
+	                    友情链接</a>
+	                |
+	                <a href="http://www.aiyingshi.com/service/templatesaleadv.aspx?advid=495" target="_blank">
+	                    供货标准</a>
+	    	</div>
+		    <div class="zcbottom2">
+		        <strong>本网站版权属于 上海爱婴室商务服务股份有限公司</strong></div>
+			<div class="zcbottom3">
+				<div class="zcbottom3_1">沪ICP备<font>0061083</font>号 <span>上海工商</span></div>
+	   		 </div>
+		</div>
+	</body>
+	<script src="../js/jquery3.2.1.js"></script>
+	<script src="../js/base.js"></script>
+	<script>
+		//点击时发送请求
+		function Check(){
+		    $.ajax({
+		       url:'http://139.199.74.211:8081/new-maven/user/login.do',
+		       data:{userName:$("#userName").val(),password:$("#password").val()},
+		       type:'post',
+		       dataType:'json',
+		       async:true,
+		       success:function(data){
+		       		console.log(data);
+	           	 	var time = new Date();
+	            		setCookie("userId", data.userId, time);
+		            if(data){
+						window.location.href = "homePage.html";
+					}
+		       }
+		    })
+		}
+	</script>
+</html>
